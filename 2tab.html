@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>Tasks and Deadlines</title>
+          <link rel="stylesheet" href="Plannerstyle.css">
+    </head>
+    <body class="container" style="background-color:#e1e4e7 ;">  
+    <div class="topnav">
+    <header>
+      <h1 class="d-inline pl-2 text-white" style="color: #1F2937;">Study Planner App</h1>
+    </header>
+        <a class="active" href="Plannerstructure.html"> Homepage </a>
+        <a href="2tab.html"> Tasks and deadlines </a>
+        <a href="Review.html"> Review </a><br>
+</div><br><br>
+
+<div style="text-align: center; color: #374151; background-color: #a9adb2;">
+  <section class="task-input" style="text-align: center;">
+    <input type="text" id="taskName" placeholder="Enter task">
+    <input type="date" id="taskDate">
+    <button onclick="addTask()">Save Task</button>
+  </section>
+
+  <section id="taskList"></section>
+
+  <section class="progress-section">
+    <h3>Progress</h3>
+    <div class="progress-bar">
+      <div id="progressFill"></div>
+    </div>
+    <p id="progressText">0% completed</p>
+    <p id="motivation"></p>
+  </section>
+        
+  <script src="Study.js"></script>
+    </body>
+
+</HTML>
